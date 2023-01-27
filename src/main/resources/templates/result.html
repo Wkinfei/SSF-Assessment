@@ -10,7 +10,7 @@
     <h2>Delivery Details</h2>
     <div class="container">
         
-        <p data-th-text="'Order Number: ' + *{orderId}"></p>
+        <p>Order Number:<a data-th-href="@{/order/${orderId}}"></a></p>
   
         <p data-th-text="'Your order will be delivereed to: ' + *{address}"></p>
         
@@ -20,10 +20,10 @@
        
         <p data-th-text="'Total cost: ' + *{total}"></p>
 
-        <p data-th-text="'size: ' + *{size}"></p>
+        <!-- <p data-th-text="'size: ' + *{size}"></p>
 
-        <p data-th-text="'pizza: ' + *{pizza}"></p>
-       
+        <p data-th-text="'pizza: ' + *{size}"></p>
+        -->
     </div>
 </body>
 </html>

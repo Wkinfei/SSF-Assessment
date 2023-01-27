@@ -17,6 +17,6 @@ public class RedisService {
         // String result = (String) redisTemplate.opsForValue().get(pizza.getOrderId());
         // if (result != null)
         //     return 1;
-        // return 0;
+       
     }
 }
