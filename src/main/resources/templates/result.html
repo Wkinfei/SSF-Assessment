@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body data-th-object="${pizza}">
+    <h2>Delivery Details</h2>
+    <div class="container">
+        
+        <p data-th-text="'Order Number: ' + *{orderId}"></p>
+  
+        <p data-th-text="'Your order will be delivereed to: ' + *{address}"></p>
+        
+        <p data-th-text="'Pizza cost: ' + *{pizzaCost}"></p>
+        
+        <p data-th-text="*{rush} ? 'Rush: $2' : ' '"></p>
+       
+        <p data-th-text="'Total cost: ' + *{total}"></p>
+
+        <p data-th-text="'size: ' + *{size}"></p>
+
+        <p data-th-text="'pizza: ' + *{pizza}"></p>
+       
+    </div>
+</body>
+</html>
